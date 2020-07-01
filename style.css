@@ -1,0 +1,239 @@
+/* style.css */
+
+body{
+    margin: 0px; 
+	padding: 0px;
+	font-size: 13px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+   font-size: 40px;
+   text-align: center;
+   font-family: 'Archivo Black', sans-serif;
+   padding-bottom: 15px;
+   padding-top: 25px;
+   color : white;
+   letter-spacing: 2px;
+}
+
+
+h2{
+   font-size: 18px;
+   color: black;
+   font-family: 'Archivo Black', sans-serif;
+   margin-bottom: 8px;
+}
+
+header{
+	height: 100px;
+	background: black;
+}
+
+footer{
+	height: 80px;
+	color : #FFFFFF;
+	background: #000000;
+    text-align: center;
+	border-top: 2px dotted #FFFFFF; 
+	padding-top: 30px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer a{
+	color : #FFFFFF;
+}
+
+footer a:hover {
+  color: rgb(200, 0, 0);
+}
+
+nav li{
+	float:left;
+	list-style-type: none;
+}
+
+nav ul{
+	margin:0px;
+	padding: 0px;
+}
+
+nav{
+	width: 100%;
+	background: rgb(200,0,0);
+}
+
+nav a{
+	padding: 20px 30px;
+	display : inline-block;
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-weight: bolder;
+	text-shadow: 1px 1px 5px black; 
+}
+
+nav a:hover{
+	position: relative;
+    top:1px;
+    background: red;
+    opacity: 0.8;
+}
+
+.menu{
+	display : table;
+	margin: 0 auto;
+	color: black;
+}
+
+.fixe{
+	position:sticky;
+    top:0;
+    width:100%;
+}
+
+/* page bande annonce */
+
+#bandeannonce{
+	height: 500px;
+	text-align: center;
+}
+
+.container{
+	margin: 0px 10%;
+	text-align: center;
+}
+
+.left{
+	float: left;
+	width : 50%;
+}
+
+.right{
+	float: left;
+	width : 50%;
+	margin-top: 100px;
+	text-align: justify;
+}
+
+.album-photos h2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.photos {
+    display: flex;
+    overflow-x: scroll;
+    padding:5px;
+    list-style-type: none;
+}
+
+.photo {
+    margin:5px;
+}
+
+/* page casting */
+
+#casting{
+  margin: 20px;
+  width: auto;
+}
+
+.réalisateur{
+	border: 2px solid black;
+	width: 150px;
+	padding: 5px;
+    text-align: center;
+	background: #FAFAFA;
+}
+
+.acteurs{
+	border: 2px solid black;
+	padding: 5px;
+	margin: 2px;
+	text-align: center;
+	background: #FAFAFA;
+	display : inline-block
+}
+
+.liste{
+	columns: 4;
+}
+
+/* page anecdotes */
+
+#anecdotes{
+	margin-left: 20px;
+	margin-right: 50px;
+  	width: auto;
+  	text-align: justify;
+}
+
+#prochainement{
+	text-align: center;
+	padding-bottom: 15px;
+	color: rgb(75,75,75);
+}
+
+
+/* régles CSS en fonction de la largeur de la fenêtre du navigateur d'un smartphone */
+@media all and (max-width: 1024px)
+{
+
+    body{
+	    width: auto;
+	    font-size: 11px;
+    }
+
+    header{
+    	height: 70px;
+    }
+
+    h1{
+    	font-size: 20;
+    	padding : 5px;
+    	text-align: center;
+    }
+
+    h2{
+    	font-size: 12px;
+    }
+
+	nav{
+		width: auto;
+	}
+
+	nav ul{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	nav a{
+		font-size: 12px;
+		padding: 10px 20px;
+	}
+
+	.photos {
+    display: flex;
+    overflow-x: scroll;
+    padding:0px;
+    list-style-type: none;
+	}
+
+	.photo img{
+		margin: 1px;
+    	width: 250px;
+    	height: 150px;
+    }
+
+    #anecdotes{
+	margin-left: 10px;
+	margin-right: 20px;
+	}
+
+}
+
+*{
+margin:0;
+padding:0;
+}
